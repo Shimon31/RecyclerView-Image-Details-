@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#D595E0">
+
+        <ImageView
+            android:id="@+id/dummyIV"
+            android:layout_width="150dp"
+            android:src="@drawable/cat"
+            android:scaleType="centerCrop"
+            android:layout_height="150dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/categoryBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:text="cat"
+            android:background="#DEED4F"
+            app:layout_constraintStart_toEndOf="@id/dummyIV"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:textColor="#F7F6F5"
+            android:text="Shallow Focus Photo of Red Floers"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintStart_toEndOf="@id/dummyIV"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/writerBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="shimon"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="#68C3CF"
+            app:layout_constraintStart_toEndOf="@id/dummyIV"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/likeBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#041678"
+            android:text="34.4k"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>
